@@ -1,0 +1,22 @@
+{
+  "name": "itexia/yii2-bootstrap-table",
+  "description": "Using extending bootstrap table ",
+  "keywords": ["bootstrap table", "yii2"],
+  "homepage": "http://bootstrap-table.wenzhixin.net.cn",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/itexia/yii2-bootstrap-table?state=open",
+  },
+  "authors": [
+        {
+            "name": "Susann Sgorzaly",
+            "email": "developer@itexia.com",
+            "homepage": "http://www.itexia.com",
+            "role": "Developer"
+        },
+  ],
+  "type": "yii2-vendor",
+  "require": {
+    "composer/installers": "dev-master"
+  }
+}

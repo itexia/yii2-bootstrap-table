@@ -1,7 +1,10 @@
 {
   "name": "itexia/yii2-bootstrap-table",
   "description": "Using extending bootstrap table ",
-  "keywords": ["bootstrap table", "yii2"],
+  "keywords": [
+    "bootstrap table",
+    "yii2"
+  ],
   "homepage": "http://bootstrap-table.wenzhixin.net.cn",
   "license": "MIT",
   "support": {
@@ -17,6 +20,9 @@
   ],
   "type": "yii2-vendor",
   "require": {
+    "yiisoft/yii2": "~2.0.6",
+    "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+    "bower-asset/bootstrap-table": "1.11.1",
     "composer/installers": "dev-master"
   }
 }

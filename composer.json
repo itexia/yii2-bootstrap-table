@@ -23,6 +23,8 @@
     "yiisoft/yii2": "~2.0.6",
     "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
     "bower-asset/bootstrap-table": "1.11.1",
+    "bower-asset/bootstrap-table-filter" : "1.1.0",
+    "bower-asset/bootstrap-table-fixed-columns" : "1.0.0",
     "composer/installers": "dev-master"
   }
 }

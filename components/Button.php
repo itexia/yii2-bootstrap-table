@@ -4,8 +4,8 @@ namespace itexia\bootstraptable\components;
 
 
 use demogorgorn\ajax\AjaxSubmitButton;
+use itexia\bootstraptable\widgets\LinkButton;
 use yii\base\Widget;
-use yii\bootstrap\Button as BaseButton;
 
 /**
  * Class Button
@@ -67,7 +67,7 @@ class Button extends Widget
         }
 
         // todo: does not work
-        echo BaseButton::widget($this->buttonConfig);
+        echo LinkButton::widget($this->buttonConfig);
 
     }
 }

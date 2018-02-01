@@ -21,12 +21,16 @@
   "type": "yii2-vendor",
   "repositories": [
     {
-      "type": "vcs",
+      "type": "git",
       "url": "https://github.com/susgo/tableExport.jquery.plugin"
     },
     {
-      "type": "vcs",
+      "type": "git",
       "url": "https://github.com/itexia/dragtable"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
     }
   ],
   "require": {

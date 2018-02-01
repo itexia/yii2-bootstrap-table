@@ -43,6 +43,7 @@ class BootstrapTableAsset extends AssetBundle
      */
     public $depends = [
       'itexia\bootstraptable\bundles\BootstrapTableExportAssetBundle',
+      'itexia\bootstraptable\bundles\DragtableAsset',
       'yii\web\JqueryAsset',
       'yii\bootstrap\BootstrapAsset',
     ];

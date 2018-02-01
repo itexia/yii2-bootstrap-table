@@ -40,7 +40,7 @@
     "bower-asset/bootstrap-table-fixed-columns": "1.0.0",
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",
-    "kayalshri/tableExport.jquery.plugin": "dev-master",
+    "kayalshri/tableExportJQueryPlugin": "*",
     "akottr/dragtable": "dev-master"
   },
   "autoload": {

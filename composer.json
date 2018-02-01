@@ -19,20 +19,6 @@
     }
   ],
   "type": "yii2-vendor",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/susgo/tableExport.jquery.plugin"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/itexia/dragtable"
-    },
-    {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
-    }
-  ],
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",

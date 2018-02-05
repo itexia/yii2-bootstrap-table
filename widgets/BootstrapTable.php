@@ -42,7 +42,7 @@ class BootstrapTable extends GridView
     private static $defaultHeaderOptions = [
       'data-sortable'       => 'true',
       'data-switchable'     => 'true',
-      'data-filter-control' => 'select',
+      'data-filter-control' => 'input',
     ];
 
     /**
@@ -154,17 +154,13 @@ class BootstrapTable extends GridView
                   'data-filter-control' => 'false',
                 ];
                 break;
-            default:
-                $column->headerOptions = [
-                  'data-field' => $column->attribute,
-                ];
         }
 
         $column->headerOptions = array_merge(
           self::$defaultHeaderOptions,
           $column->headerOptions
         );
-
+        
         return $column;
     }
 

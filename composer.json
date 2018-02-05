@@ -27,7 +27,7 @@
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",
     "bower-asset/tableExport.jquery.plugin": "dev-master",
-    "itexia/dragtable": "dev-master",
+    "akottr/dragtable": "dev-master",
     "kartik-v/yii2-date-range": "dev-master",
     "wbraganca/yii2-multiselect": "~1.0.1",
     "bower-asset/bootstrap-table-fixed-columns": "dev-master"

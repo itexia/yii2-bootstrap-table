@@ -26,11 +26,11 @@
     "bower-asset/bootstrap-table-fixed-columns": "1.0.0",
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",
-    "susgo/tableExport.jquery.plugin": "dev-master",
-    "akottr/dragtable": "dev-master",
+    "bower-asset/tableExport.jquery.plugin": "dev-master",
+    "bower-asset/dragtable": "dev-master",
     "kartik-v/yii2-date-range": "dev-master",
     "wbraganca/yii2-multiselect": "~1.0.1",
-    "bower-asset/bootstrap-table-fixed-columns": "*"
+    "bower-asset/bootstrap-table-fixed-columns": "dev-master"
   },
   "autoload": {
     "psr-4": {

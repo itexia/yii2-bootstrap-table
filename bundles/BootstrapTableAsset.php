@@ -45,6 +45,7 @@ class BootstrapTableAsset extends AssetBundle
       'itexia\bootstraptable\bundles\BootstrapTableExportAssetBundle',
       'itexia\bootstraptable\bundles\DragtableAsset',
       'itexia\bootstraptable\bundles\DateRangePickerAsset',
+      'itexia\bootstraptable\bundles\BootstrapTableFixedColumnsAsset',
       'yii\web\JqueryAsset',
       'yii\bootstrap\BootstrapAsset',
     ];

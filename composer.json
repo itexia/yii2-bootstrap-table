@@ -18,7 +18,7 @@
       "role": "Developer"
     }
   ],
-  "type": "yii2-vendor",
+  "type": "yii2-extension",
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
@@ -29,11 +29,18 @@
     "susgo/tableExport.jquery.plugin": "dev-master",
     "akottr/dragtable": "dev-master",
     "kartik-v/yii2-date-range": "dev-master",
-    "wbraganca/yii2-multiselect": "~1.0.1"
+    "wbraganca/yii2-multiselect": "~1.0.1",
+    "bower-asset/bootstrap-table-fixed-columns": "*"
   },
   "autoload": {
     "psr-4": {
       "itexia\\bootstraptable\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
     }
   }
 }

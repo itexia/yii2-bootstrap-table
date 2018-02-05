@@ -27,7 +27,8 @@
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",
     "susgo/tableExport.jquery.plugin": "dev-master",
-    "akottr/dragtable": "dev-master"
+    "akottr/dragtable": "dev-master",
+    "kartik-v/yii2-date-range": "dev-master"
   },
   "autoload": {
     "psr-4": {

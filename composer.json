@@ -28,7 +28,8 @@
     "composer/installers": "dev-master",
     "susgo/tableExport.jquery.plugin": "dev-master",
     "akottr/dragtable": "dev-master",
-    "kartik-v/yii2-date-range": "dev-master"
+    "kartik-v/yii2-date-range": "dev-master",
+    "wbraganca/yii2-multiselect": "~1.0.1"
   },
   "autoload": {
     "psr-4": {

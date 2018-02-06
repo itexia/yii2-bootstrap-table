@@ -17,7 +17,7 @@ class BootstrapTableFixedColumnsAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = 'bower/bootstrap-table-fixed-columns';
+    public $sourcePath = '@vendor/bower/bootstrap-table-fixed-columns';
 
     /**
      * @var array

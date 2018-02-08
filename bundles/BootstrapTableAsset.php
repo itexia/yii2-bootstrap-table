@@ -31,7 +31,7 @@ class BootstrapTableAsset extends AssetBundle
      * @var array
      */
     public $js = [
-      'bootstrap-table.min.js',
+      'bootstrap-table.js',
       'extensions/filter-control/bootstrap-table-filter-control.min.js',
       'extensions/editable/bootstrap-table-editable.min.js',
       'extensions/export/bootstrap-table-export.min.js',

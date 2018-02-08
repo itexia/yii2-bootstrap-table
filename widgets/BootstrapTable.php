@@ -29,8 +29,16 @@ class BootstrapTable extends GridView
       'data-show-columns'        => 'true',
       'data-reorderable-columns' => 'true',
       'data-max-moving-rows'     => '100',
-      'data-url'                 => 'data',
+      'data-ajax-url'            => 'data',
       'data-click-to-select'     => 'true',
+      'data-total-field'         => 'totalCount',
+      'data-side-pagination'     => 'server',
+      'data-page-size'           => '10',
+      'data-page-number'         => '1',
+      'data-infinite-scrolling'  => 'true',
+      'data-append'              => 'true',
+      'data-method'              => 'post',
+      'data-content-type'        => 'application/json',
     ];
 
     /**
@@ -160,7 +168,7 @@ class BootstrapTable extends GridView
           self::$defaultHeaderOptions,
           $column->headerOptions
         );
-        
+
         return $column;
     }
 

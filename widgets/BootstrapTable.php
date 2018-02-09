@@ -31,7 +31,7 @@ class BootstrapTable extends GridView
       'data-max-moving-rows'     => '100',
       'data-ajax-url'            => 'data',
       'data-click-to-select'     => 'true',
-      'data-total-field'         => 'totalCount',
+      'data-total-field'         => 'total',
       'data-side-pagination'     => 'server',
       'data-page-size'           => '10',
       'data-page-number'         => '1',

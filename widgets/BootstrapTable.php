@@ -39,6 +39,7 @@ class BootstrapTable extends GridView
       'data-append'              => 'true',
       'data-method'              => 'post',
       'data-content-type'        => 'application/json',
+      'data-id-field'            => 'id',
     ];
 
     /**

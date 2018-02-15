@@ -51,7 +51,7 @@ class BootstrapTable extends GridView
     private static $defaultHeaderOptions = [
       'data-sortable'       => 'true',
       'data-switchable'     => 'true',
-      'data-filter-control' => 'input',
+      'data-filter-control' => 'select',
     ];
 
     /**

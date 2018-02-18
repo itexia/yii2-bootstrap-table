@@ -23,14 +23,13 @@
     "yiisoft/yii2": "~2.0.6",
     "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
     "bower-asset/bootstrap-table": "1.11.1",
-    "bower-asset/bootstrap-table-fixed-columns": "1.0.0",
+    "bower-asset/bootstrap-table-fixed-columns": "dev-master",
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",
     "kayalshri/tableExport.jquery.plugin": "dev-master",
     "akottr/dragtable": "dev-master",
     "kartik-v/yii2-date-range": "dev-master",
-    "wbraganca/yii2-multiselect": "~1.0.1",
-    "bower-asset/bootstrap-table-fixed-columns": "dev-master"
+    "wbraganca/yii2-multiselect": "~1.0.1"
   },
   "autoload": {
     "psr-4": {

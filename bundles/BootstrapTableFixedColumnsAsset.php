@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sgorzaly
- * Date: 05.02.18
- * Time: 11:58
- */
-
 namespace itexia\bootstraptable\bundles;
 
 
@@ -17,7 +10,7 @@ class BootstrapTableFixedColumnsAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@vendor/bower/bootstrap-table-fixed-columns';
+    public $sourcePath = '@vendor/bower-asset/bootstrap-table-fixed-columns';
 
     /**
      * @var array

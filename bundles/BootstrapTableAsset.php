@@ -32,7 +32,7 @@ class BootstrapTableAsset extends AssetBundle
      */
     public $js = [
       'bootstrap-table.js',
-      'extensions/filter-control/bootstrap-table-filter-control.min.js',
+//      'extensions/filter-control/bootstrap-table-filter-control.js',
       'extensions/editable/bootstrap-table-editable.min.js',
       'extensions/export/bootstrap-table-export.min.js',
       'extensions/reorder-columns/bootstrap-table-reorder-columns.js',
@@ -45,7 +45,7 @@ class BootstrapTableAsset extends AssetBundle
       'itexia\bootstraptable\bundles\BootstrapTableExportAssetBundle',
       'itexia\bootstraptable\bundles\DragtableAsset',
       'itexia\bootstraptable\bundles\DateRangePickerAsset',
-      'itexia\bootstraptable\bundles\BootstrapTableFixedColumnsAsset',
+//      'itexia\bootstraptable\bundles\BootstrapTableFixedColumnsAsset', // depends on bootstrap-table.js but is included before!
       'yii\web\JqueryAsset',
       'yii\bootstrap\BootstrapAsset',
     ];

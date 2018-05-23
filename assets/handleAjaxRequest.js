@@ -2,8 +2,13 @@ function handleAjaxLink(e) {
     'use strict';
     var $link = $(e.target);
     var targetUrl = $link.attr('ajax-url');
+    if (!targetUrl) {
+        targetUrl = $link.attr('href');
+    }
     var $tableOptions = $.fn.bootstrapTable.defaults;
     var ajaxRequest;
+
+    e.preventDefault();
 
     $.ajax({
         url: targetUrl,

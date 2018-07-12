@@ -36,6 +36,7 @@ class BootstrapTableAsset extends AssetBundle
       'extensions/editable/bootstrap-table-editable.min.js',
       'extensions/export/bootstrap-table-export.min.js',
       'extensions/reorder-columns/bootstrap-table-reorder-columns.js',
+      'extensions/reorder-rows/bootstrap-table-reorder-rows.js',
     ];
 
     /**

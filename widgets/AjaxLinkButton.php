@@ -97,7 +97,7 @@ class AjaxLinkButton extends Widget
     {
         $view = $this->getView();
 
-        $view->registerJs("$('#" . $this->options['id'] . "').unbind('click').click(
+        $view->registerJs("$('#" . $this->options['id'] . "[ajax-url]').unbind('click').click(
                 handleAjaxLink);");
     }
 

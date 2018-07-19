@@ -55,6 +55,8 @@ class AjaxLinkButton extends Widget
      */
     public $url = '#';
 
+    public $visible = true;
+
     /**
      * Initializes the widget.
      */

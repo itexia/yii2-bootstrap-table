@@ -8,6 +8,8 @@ function handleAjaxLink(e) {
     var $tableOptions = $.fn.bootstrapTable.defaults;
     var ajaxRequest;
 
+    var callbackFunction = $link.attr('callback-function');
+
     e.preventDefault();
 
     $.ajax({
@@ -27,11 +29,13 @@ function handleAjaxLink(e) {
             allSelected: $tableOptions.summaryData.selectedAll,
             ids: JSON.stringify($tableOptions.summaryData.rowIds)
         },
-        sucess: function (res) {
+        success: function (res) {
             console.log('ajax success');
             console.log(res);
 
-            // TODO: trigger table reload
+            if (callbackFunction && typeof window[callbackFunction] === 'function') {
+                window[callbackFunction]();
+            }
         },
         error: function (xhr, status, error) {
             console.log('ajax error');

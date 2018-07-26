@@ -33,6 +33,9 @@ function handleAjaxLink(e) {
             console.log('ajax success');
             console.log(res);
 
+            $tableOptions.summaryData.selectedAll = false;
+            $tableOptions.summaryData.rowIds = [];
+
             if (callbackFunction && typeof window[callbackFunction] === 'function') {
                 window[callbackFunction]();
             }

@@ -39,6 +39,8 @@ function handleAjaxLink(e) {
             if (callbackFunction && typeof window[callbackFunction] === 'function') {
                 window[callbackFunction]();
             }
+
+            toastr[res.type](res.message, res.title, res.options);
         },
         error: function (xhr, status, error) {
             console.log('ajax error');

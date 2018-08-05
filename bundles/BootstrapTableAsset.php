@@ -2,7 +2,6 @@
 
 namespace itexia\bootstraptable\bundles;
 
-
 use yii\web\AssetBundle;
 
 /**
@@ -49,5 +48,6 @@ class BootstrapTableAsset extends AssetBundle
 //      'itexia\bootstraptable\bundles\BootstrapTableFixedColumnsAsset', // depends on bootstrap-table.js but is included before!
       'yii\web\JqueryAsset',
       'yii\bootstrap\BootstrapAsset',
+      NotificationToastrAsset::class,
     ];
 }

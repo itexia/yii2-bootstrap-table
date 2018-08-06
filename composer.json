@@ -28,7 +28,7 @@
     "composer/installers": "dev-master",
     "kayalshri/tableExport.jquery.plugin": "dev-master",
     "akottr/dragtable": "dev-master",
-    "kartik-v/yii2-date-range": "dev-master",
+    "kartik-v/yii2-date-range": "^1.6.9",
     "lavrentiev/yii2-toastr": "^2.0",
     "wbraganca/yii2-multiselect": "~1.0.1"
   },

@@ -161,6 +161,7 @@ class BootstrapTable extends GridView
                   'data-field'          => 'action',
                   'data-switchable'     => 'false',
                   'data-sortable'       => 'false',
+                  'data-searchable'     => 'false',
                   'data-filter-control' => 'false',
                 ];
                 break;

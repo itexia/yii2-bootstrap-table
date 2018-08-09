@@ -23,6 +23,7 @@ class BootstrapTable extends GridView
     private static $defaultTableOptions = [
       'data-buttons-class'       => 'btn btn-circle',
       'data-filter-control'      => 'true',
+      'data-active-filters'      => 'false',
       'data-toggle'              => 'table',
       'data-show-export'         => 'true',
       'data-export-types'        => ['pdf', 'csv', 'excel'],

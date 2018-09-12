@@ -117,7 +117,10 @@ class BootstrapTable extends GridView
             $html[] = $this->renderTableHeaderCell($this->setHeaderOptions($column));
         }
 
-        $content = Html::tag('tr', implode("\n", $html), $this->tableOptions);
+        // remove data-toggle for tr or bootstrap table would init() twice!
+        $trOptions = $this->tableOptions;
+        unset($trOptions['data-toggle']);
+        $content = Html::tag('tr', implode("\n", $html), $trOptions);
 
         return Html::tag('thead', $content, []);
     }

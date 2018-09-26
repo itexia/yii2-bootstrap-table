@@ -14,11 +14,11 @@ function handleAjaxLink(e) {
 
     $.ajax({
         url: targetUrl,
-        type: "post",
+        type: 'post',
         dataType: 'json',
         beforeSend: function(xhr, opts){
             if ($link.attr('id') === 'delete') {
-                var xconfirm = confirm(getTranslation("InvInterface", "Möchten Sie diese Datensätze wirklich löschen?"));
+                var xconfirm = confirm('Möchten Sie diese Datensätze wirklich löschen?');
                 if (xconfirm !== true) {
                     xhr.abort();
                     return false;
@@ -30,9 +30,6 @@ function handleAjaxLink(e) {
             ids: JSON.stringify($tableOptions.summaryData.rowIds)
         },
         success: function (res) {
-            console.log('ajax success');
-            console.log(res);
-
             $tableOptions.summaryData.selectedAll = false;
             $tableOptions.summaryData.rowIds = [];
 
@@ -48,35 +45,9 @@ function handleAjaxLink(e) {
             console.log(xhr.responseText);
         },
         complete: function (xhr) {
-            console.log('ajax complete');
-            console.log(xhr);
+            // console.log('ajax complete');
+            // console.log(xhr);
         }
     });
-    console.log(JSON.stringify($tableOptions.summaryData));
-    console.log(targetUrl);
-    console.log($tableOptions.summaryData.selectedAll);
-    console.log($tableOptions.summaryData.rowIds);
 }
 
-
-function getTranslation(category, message, params) {
-    // TODO: does not exist yet?
-    ajaxRequest = $.ajax({
-        url: 'get-translation',
-        type: "post",
-        async: false,
-        dataType: 'json',
-        data: {
-            category: category,
-            message: message,
-            params: JSON.stringify(params)
-        },
-        success: function (response) {
-            message = response;
-        },
-        error: function (e) {
-        }
-    });
-
-    return message;
-}

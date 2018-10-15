@@ -24,7 +24,9 @@ class BootstrapTableExportAssetBundle extends AssetBundle
     public $js = [
       'tableExport.js',
       'jquery.base64.js',
-      'html2canvas.js',
+      'jspdf/libs/sprintf.js',
+      'jspdf/jspdf.js',
+      'jspdf/libs/base64.js'
     ];
 
     /**

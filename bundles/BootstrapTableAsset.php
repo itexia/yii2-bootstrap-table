@@ -33,7 +33,7 @@ class BootstrapTableAsset extends AssetBundle
       'bootstrap-table.js',
 //      'extensions/filter-control/bootstrap-table-filter-control.js',
       'extensions/editable/bootstrap-table-editable.min.js',
-      'extensions/export/bootstrap-table-export.min.js',
+      'extensions/export/bootstrap-table-export.js',
       'extensions/reorder-columns/bootstrap-table-reorder-columns.js',
       'extensions/reorder-rows/bootstrap-table-reorder-rows.js',
       'extensions/cookie/bootstrap-table-cookie.js',

@@ -24,7 +24,7 @@
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-    "bower-asset/bootstrap-table": "*",
+    "bower-asset/bootstrap-table": "1.11.1 | dev-1.11.1-itexia",
     "bower-asset/bootstrap-table-fixed-columns": "dev-master",
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",

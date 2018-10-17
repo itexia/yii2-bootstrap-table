@@ -19,6 +19,14 @@
     }
   ],
   "type": "yii2-extension",
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/itexia/bootstrap-table"
+    }
+  ],
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",

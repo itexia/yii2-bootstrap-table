@@ -17,7 +17,7 @@ class DateRangePickerAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@vendor/kartik-v/yii2-date-range/assets';
+    public $sourcePath = '@vendor/kartik-v/yii2-date-range/src/assets';
 
     /**
      * @var array css assets

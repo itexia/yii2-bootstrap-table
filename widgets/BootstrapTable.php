@@ -26,7 +26,7 @@ class BootstrapTable extends GridView
       'data-active-filters'      => 'false',
       'data-toggle'              => 'table',
       'data-show-export'         => 'true',
-      'data-export-types'        => ['csv', 'excel'],
+      'data-export-types'        => ['pdf', 'csv', 'excel'],
       'data-export-data-type'    => 'all',
       'data-show-columns'        => 'true',
       'data-reorderable-columns' => 'true',

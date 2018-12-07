@@ -16,17 +16,18 @@ class BootstrapTableExportAssetBundle extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@vendor/kayalshri/tableExport.jquery.plugin';
+    public $sourcePath = '@vendor/hhurz/tableExport.jquery.plugin';
 
     /**
      * @var array js assets
      */
     public $js = [
-      'tableExport.js',
-      'jquery.base64.js',
-      'jspdf/libs/sprintf.js',
-      'jspdf/jspdf.js',
-      'jspdf/libs/base64.js'
+        'libs/FileSaver/FileSaver.min.js',
+        'libs/js-xlsx/xlsx.core.min.js',
+        'libs/jspdf/jspdf.min.js',
+        'libs/jsPDF-AutoTable/jspdf.plugin.autotable.js',
+//        'tableExport.min.js',
+        'tableExport.js',
     ];
 
     /**

@@ -26,7 +26,7 @@
     "bower-asset/bootstrap-table": "1.11.1",
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
     "composer/installers": "dev-master",
-    "kayalshri/tableExport.jquery.plugin": "dev-master",
+    "kayalshri/tableexport.jquery.plugin": "dev-master",
     "akottr/dragtable": "dev-master",
     "kartik-v/yii2-date-range": "^1.6.9",
     "lavrentiev/yii2-toastr": "^2.0",

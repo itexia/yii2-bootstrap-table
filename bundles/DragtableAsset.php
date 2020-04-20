@@ -2,17 +2,10 @@
 
 namespace itexia\bootstraptable\bundles;
 
-
 use yii\web\AssetBundle;
 
-/**
- * Class DragtableAssetBundle
- *
- * @package itexia\bootstraptable\bundles
- */
 class DragtableAsset extends AssetBundle
 {
-
     /**
      * @var string
      */
@@ -22,13 +15,13 @@ class DragtableAsset extends AssetBundle
      * @var array css assets
      */
     public $css = [
-      'dragtable.css',
+        'dragtable.css',
     ];
 
     /**
      * @var array js assets
      */
     public $js = [
-      'jquery.dragtable.js',
+        'jquery.dragtable.js',
     ];
 }

@@ -2,18 +2,11 @@
 
 namespace itexia\bootstraptable\widgets;
 
-
 use yii\base\Widget;
 use yii\helpers\Html;
 
-/**
- * Class BootstrapTableToolbar
- *
- * @package itexia\bootstraptable\widgets
- */
 class BootstrapTableToolbar extends Widget
 {
-
     /**
      * @var string
      */
@@ -24,27 +17,21 @@ class BootstrapTableToolbar extends Widget
      */
     public $toolbarButtons;
 
-    /**
-     * Inits widget
-     */
-    public function init()
+    public function init(): void
     {
         parent::init();
     }
 
-    /**
-     * Runs the widget.
-     *
-     * @return string
-     */
-    public function run()
+    public function run(): string
     {
-        $html = Html::tag('div', implode('', $this->toolbarButtons), [
-          'id'          => $this->id,
-          'class'       => 'btn-group btn-group-devided',
-          'data-toggle' => 'buttons',
-        ]);
-
-        return $html;
+        return Html::tag(
+            'div',
+            implode('', $this->toolbarButtons),
+            [
+                'id' => $this->id,
+                'class' => 'btn-group btn-group-devided',
+                'data-toggle' => 'buttons',
+            ]
+        );
     }
 }

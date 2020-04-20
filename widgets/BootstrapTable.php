@@ -73,6 +73,10 @@ class BootstrapTable extends GridView
     private function setTableOptions(): array
     {
         $settings = self::$defaultTableOptions;
+        $settings['data-locale'] = 'en-GB';
+        if (!empty(Yii::$app->language)) {
+            $settings['data-locale'] = Yii::$app->language;
+        }
 
         return $this->tableOptions = array_merge($this->tableOptions, $settings);
     }

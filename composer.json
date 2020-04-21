@@ -33,7 +33,7 @@
         "yiisoft/yii2": "^2.0.6",
         "bower-asset/bootstrap": "^3.1",
         "bower-asset/bootstrap-table-fixed-columns": "dev-master",
-        "bower-asset/bootstrap-table": "^1.11.1",
+        "bower-asset/bootstrap-table": "1.11.1",
         "demogorgorn/yii2-ajax-submit-button": "^1.2.1",
         "composer/installers": "dev-master",
         "kayalshri/tableexport.jquery.plugin": "dev-master",

@@ -1,12 +1,11 @@
 <?php
-namespace itexia\bootstraptable\bundles;
 
+namespace itexia\bootstraptable\bundles;
 
 use yii\web\AssetBundle;
 
 class BootstrapTableFixedColumnsAsset extends AssetBundle
 {
-
     /**
      * @var string
      */
@@ -16,13 +15,13 @@ class BootstrapTableFixedColumnsAsset extends AssetBundle
      * @var array
      */
     public $css = [
-      'bootstrap-table-fixed-columns.css',
+        'bootstrap-table-fixed-columns.css',
     ];
 
     /**
      * @var array
      */
     public $js = [
-      'bootstrap-table-fixed-columns.js',
+        'bootstrap-table-fixed-columns.js',
     ];
 }

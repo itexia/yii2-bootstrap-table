@@ -2,19 +2,13 @@
 
 namespace itexia\bootstraptable\components;
 
-
 use demogorgorn\ajax\AjaxSubmitButton;
+use Exception;
 use itexia\bootstraptable\widgets\LinkButton;
 use yii\base\Widget;
 
-/**
- * Class Button
- *
- * @package itexia\bootstraptable\components
- */
 class Button extends Widget
 {
-
     /**
      * @var bool
      */
@@ -25,12 +19,6 @@ class Button extends Widget
      */
     private $buttonConfig;
 
-
-    /**
-     * Button constructor.
-     *
-     * @param array $config
-     */
     public function __construct(array $config = [])
     {
         if (isset($config['isAjaxButton'])) {
@@ -41,9 +29,6 @@ class Button extends Widget
         $this->buttonConfig = $config;
     }
 
-    /**
-     * Initializes the widget.
-     */
     public function init()
     {
         parent::init();

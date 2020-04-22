@@ -3,15 +3,11 @@
 namespace itexia\bootstraptable\bundles;
 
 use yii\web\AssetBundle;
+use yii\web\JqueryAsset;
+use yii\bootstrap\BootstrapAsset;
 
-/**
- * Class BootstrapTableAsset
- *
- * @package itexia\bootstraptable\bundles
- */
 class BootstrapTableAsset extends AssetBundle
 {
-
     /**
      * @var string
      */
@@ -21,9 +17,9 @@ class BootstrapTableAsset extends AssetBundle
      * @var array
      */
     public $css = [
-      'bootstrap-table.min.css',
-      'extensions/filter-control/bootstrap-table-filter-control.css',
-      'extensions/reorder-rows/bootstrap-table-reorder-rows.css',
+        'bootstrap-table.min.css',
+        'extensions/filter-control/bootstrap-table-filter-control.css',
+        'extensions/reorder-rows/bootstrap-table-reorder-rows.css',
     ];
 
     /**
@@ -43,12 +39,11 @@ class BootstrapTableAsset extends AssetBundle
      * @var array
      */
     public $depends = [
-      'itexia\bootstraptable\bundles\BootstrapTableExportAssetBundle',
-      'itexia\bootstraptable\bundles\DragtableAsset',
-      'itexia\bootstraptable\bundles\DateRangePickerAsset',
-//      'itexia\bootstraptable\bundles\BootstrapTableFixedColumnsAsset', // depends on bootstrap-table.js but is included before!
-      'yii\web\JqueryAsset',
-      'yii\bootstrap\BootstrapAsset',
-      NotificationToastrAsset::class,
+        BootstrapTableExportAssetBundle::class,
+        DragtableAsset::class,
+        DateRangePickerAsset::class,
+        JqueryAsset::class,
+        BootstrapAsset::class,
+        NotificationToastrAsset::class,
     ];
 }

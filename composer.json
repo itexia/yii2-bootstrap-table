@@ -31,10 +31,11 @@
     "type": "yii2-extension",
     "require": {
         "yiisoft/yii2": "^2.0",
-        "bower-asset/bootstrap": "^3.1",
+        "bower-asset/bootstrap": "~3.3.7",
         "bower-asset/bootstrap-table-fixed-columns": "dev-master",
         "bower-asset/bootstrap-table": "1.11.1",
         "demogorgorn/yii2-ajax-submit-button": "dev-master",
+        "composer/installers": "dev-master",
         "kayalshri/tableexport.jquery.plugin": "dev-master",
         "akottr/dragtable": "dev-master",
         "kartik-v/yii2-date-range": "^1.6.9",

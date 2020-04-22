@@ -33,13 +33,13 @@
         "yiisoft/yii2": "^2.0",
         "bower-asset/bootstrap": "^3.1",
         "bower-asset/bootstrap-table-fixed-columns": "dev-master",
-        "bower-asset/bootstrap-table": "~1.11.1",
+        "bower-asset/bootstrap-table": "1.11.1",
         "demogorgorn/yii2-ajax-submit-button": "dev-master",
         "kayalshri/tableexport.jquery.plugin": "dev-master",
         "akottr/dragtable": "dev-master",
-        "kartik-v/yii2-date-range": "^1.6",
+        "kartik-v/yii2-date-range": "^1.6.9",
         "lavrentiev/yii2-toastr": "^2.0",
-        "wbraganca/yii2-multiselect": "^1.0"
+        "wbraganca/yii2-multiselect": "~1.0.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"

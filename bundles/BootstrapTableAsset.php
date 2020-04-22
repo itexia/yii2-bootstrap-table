@@ -31,7 +31,7 @@ class BootstrapTableAsset extends AssetBundle
      */
     public $js = [
       'bootstrap-table.js',
-//      'extensions/filter-control/bootstrap-table-filter-control.js',
+      'bootstrap-table-locale-all.min.js',
       'extensions/editable/bootstrap-table-editable.min.js',
       'extensions/export/bootstrap-table-export.js',
       'extensions/reorder-columns/bootstrap-table-reorder-columns.js',

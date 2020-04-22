@@ -18,13 +18,31 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/itexia/dragtable"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/itexia/tableExport.jquery.plugin"
         }
     ],
     "type": "yii2-extension",
     "require": {
-        "demogorgorn/yii2-ajax-submit-button": "^1.2.1",
-        "yiisoft/yii2": "^2.0.6",
-        "yiisoft/yii2-bootstrap": "~2.0.0"
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/bootstrap": "^3.1",
+        "bower-asset/bootstrap-table-fixed-columns": "dev-master",
+        "bower-asset/bootstrap-table": "~1.11.1",
+        "demogorgorn/yii2-ajax-submit-button": "^1.2",
+        "kayalshri/tableexport.jquery.plugin": "dev-master",
+        "akottr/dragtable": "dev-master",
+        "kartik-v/yii2-date-range": "^1.6",
+        "lavrentiev/yii2-toastr": "^2.0",
+        "wbraganca/yii2-multiselect": "^1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "psr-4": {

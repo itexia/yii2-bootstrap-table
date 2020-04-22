@@ -25,7 +25,6 @@
     "bower-asset/bootstrap-table-fixed-columns": "dev-master",
     "bower-asset/bootstrap-table": "1.11.1",
     "demogorgorn/yii2-ajax-submit-button": "dev-master",
-    "composer/installers": "dev-master",
     "kayalshri/tableExport.jquery.plugin": "dev-hhurz-merge",
     "akottr/dragtable": "dev-master",
     "kartik-v/yii2-date-range": "^1.6.9",

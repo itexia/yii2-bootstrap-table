@@ -1,25 +1,11 @@
 {
     "name": "itexia/yii2-bootstrap-table",
-    "description": "Using extending bootstrap table ",
+    "description": "Using bootstrap-table in Yii2",
     "keywords": [
         "bootstrap table",
         "yii2"
     ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/itexia/dragtable"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/itexia/tableExport.jquery.plugin"
-        }
-    ],
-    "homepage": "http://bootstrap-table.wenzhixin.net.cn",
     "license": "MIT",
-    "support": {
-        "issues": "https://github.com/itexia/yii2-bootstrap-table?state=open"
-    },
     "authors": [
         {
             "name": "Susann Sgorzaly",
@@ -30,21 +16,13 @@
     ],
     "type": "yii2-extension",
     "require": {
-        "yiisoft/yii2": "^2.0.6",
-        "bower-asset/bootstrap": "^3.1",
-        "bower-asset/bootstrap-table-fixed-columns": "dev-master",
-        "bower-asset/bootstrap-table": "^1.11.1",
         "demogorgorn/yii2-ajax-submit-button": "^1.2.1",
-        "composer/installers": "^1.9.0",
-        "kayalshri/tableexport.jquery.plugin": "dev-master",
-        "akottr/dragtable": "dev-master",
-        "kartik-v/yii2-date-range": "^1.6.9",
-        "lavrentiev/yii2-toastr": "^2.0",
-        "wbraganca/yii2-multiselect": "^1.0.1"
+        "yiisoft/yii2": "^2.0.6",
+        "yiisoft/yii2-bootstrap": "~2.0.0"
     },
     "autoload": {
         "psr-4": {
-            "itexia\\bootstraptable\\": ""
+            "Itexia\\BootstrapTable\\": ""
         }
     },
     "extra": {

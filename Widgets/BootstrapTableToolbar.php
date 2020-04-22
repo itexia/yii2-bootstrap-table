@@ -1,6 +1,6 @@
 <?php
 
-namespace itexia\bootstraptable\widgets;
+namespace Itexia\BootstrapTable\Widgets;
 
 use yii\base\Widget;
 use yii\helpers\Html;

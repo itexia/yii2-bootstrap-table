@@ -1,9 +1,10 @@
 <?php
 
-namespace itexia\bootstraptable\widgets;
+namespace Itexia\BootstrapTable\Widgets;
 
 use itexia\bootstraptable\bundles\BootstrapTableAsset;
 use ReflectionClass;
+use ReflectionException;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\bootstrap\Html;
@@ -12,8 +13,6 @@ use yii\grid\GridView;
 class BootstrapTable extends GridView
 {
     /**
-     * @var array
-     *
      * see also: http://bootstrap-table.wenzhixin.net.cn/documentation/ for
      *   additional table options
      */
@@ -44,8 +43,6 @@ class BootstrapTable extends GridView
     ];
 
     /**
-     * @var array
-     *
      * see also: http://bootstrap-table.wenzhixin.net.cn/documentation/ for
      *   additional column options.
      */
@@ -120,11 +117,19 @@ class BootstrapTable extends GridView
         );
     }
 
+    /**
+     * @param mixed $cell
+     */
     private function renderTableHeaderCell($cell): string
     {
         return Html::tag('th', $cell->label, $cell->headerOptions);
     }
 
+    /**
+     * @param mixed $column
+     * @return mixed
+     * @throws ReflectionException
+     */
     private function setHeaderOptions($column)
     {
         $columnClass = (new ReflectionClass($column))->getShortName();
@@ -148,9 +153,8 @@ class BootstrapTable extends GridView
         return $column;
     }
 
-    private function renderTable($html = '<thead></thead>'): string
+    private function renderTable(string $html = '<thead></thead>'): string
     {
         return Html::tag('table', $html, $this->tableOptions);
     }
-
 }

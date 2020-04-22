@@ -1,6 +1,6 @@
 <?php
 
-namespace itexia\bootstraptable\components;
+namespace Itexia\BootstrapTable\Components;
 
 use demogorgorn\ajax\AjaxSubmitButton;
 use Exception;

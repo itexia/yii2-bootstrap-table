@@ -26,12 +26,13 @@ class BootstrapTableAsset extends AssetBundle
      * @var array
      */
     public $js = [
-        'bootstrap-table.js',
-        'extensions/editable/bootstrap-table-editable.min.js',
-        'extensions/export/bootstrap-table-export.js',
-        'extensions/reorder-columns/bootstrap-table-reorder-columns.js',
-        'extensions/reorder-rows/bootstrap-table-reorder-rows.js',
-        'extensions/cookie/bootstrap-table-cookie.js',
+      'bootstrap-table.js',
+      'bootstrap-table-locale-all.min.js',
+      'extensions/editable/bootstrap-table-editable.min.js',
+      'extensions/export/bootstrap-table-export.js',
+      'extensions/reorder-columns/bootstrap-table-reorder-columns.js',
+      'extensions/reorder-rows/bootstrap-table-reorder-rows.js',
+      'extensions/cookie/bootstrap-table-cookie.js',
     ];
 
     /**

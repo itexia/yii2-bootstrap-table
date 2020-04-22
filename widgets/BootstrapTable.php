@@ -44,6 +44,7 @@ class BootstrapTable extends GridView
       'data-id-field'           => 'id',
       'data-cookie'             => 'true',
       'data-cookie-id-table'    => 'saveTableSettings',
+      'data-locale'             => 'en-GB'
     ];
 
     /**

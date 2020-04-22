@@ -1,27 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sgorzaly
- * Date: 12.02.18
- * Time: 13:25
- */
 
 namespace itexia\bootstraptable\widgets;
-
 
 use itexia\bootstraptable\bundles\AjaxRequestAsset;
 use yii\bootstrap\Html;
 use yii\bootstrap\Widget;
-use yii\helpers\Url;
 
 class AjaxLinkButton extends Widget
 {
-
     /**
      * Icon positions
      */
     public const ICON_POSITION_LEFT = 'left';
-
     public const  ICON_POSITION_RIGHT = 'right';
 
     /**
@@ -35,7 +25,7 @@ class AjaxLinkButton extends Widget
     public $encodeLabel = true;
 
     /**
-     * @var
+     * @var string
      */
     public $icon;
 
@@ -57,9 +47,6 @@ class AjaxLinkButton extends Widget
 
     public $visible = true;
 
-    /**
-     * Initializes the widget.
-     */
     public function init()
     {
         parent::init();
@@ -71,9 +58,6 @@ class AjaxLinkButton extends Widget
         AjaxRequestAsset::register($this->view);
     }
 
-    /**
-     * @return string
-     */
     public function run()
     {
         $label = $this->encodeLabel ? Html::encode($this->label) : $this->label;

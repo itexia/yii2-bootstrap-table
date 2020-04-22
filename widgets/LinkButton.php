@@ -5,23 +5,13 @@ namespace itexia\bootstraptable\widgets;
 use yii\bootstrap\Button;
 use yii\bootstrap\Html;
 
-/**
- * Class LinkButton
- *
- * @package itexia\bootstraptable\widgets
- */
 class LinkButton extends Button
 {
-
-    /**
-     * Icon positions
-     */
     public const ICON_POSITION_LEFT = 'left';
-
-    public const  ICON_POSITION_RIGHT = 'right';
+    public const ICON_POSITION_RIGHT = 'right';
 
     /**
-     * @var
+     * @var string
      */
     public $icon;
 

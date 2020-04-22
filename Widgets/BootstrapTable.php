@@ -2,7 +2,7 @@
 
 namespace Itexia\BootstrapTable\Widgets;
 
-use itexia\bootstraptable\bundles\BootstrapTableAsset;
+use Itexia\BootstrapTable\Bundles\BootstrapTableAsset;
 use ReflectionClass;
 use ReflectionException;
 use Yii;

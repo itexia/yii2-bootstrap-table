@@ -4,7 +4,7 @@ namespace Itexia\BootstrapTable\Components;
 
 use demogorgorn\ajax\AjaxSubmitButton;
 use Exception;
-use itexia\bootstraptable\widgets\LinkButton;
+use Itexia\BootstrapTable\Widgets\LinkButton;
 use yii\base\Widget;
 
 class Button extends Widget

@@ -2,7 +2,7 @@
 
 namespace Itexia\BootstrapTable\Widgets;
 
-use itexia\bootstraptable\bundles\AjaxRequestAsset;
+use Itexia\BootstrapTable\Bundles\AjaxRequestAsset;
 use yii\bootstrap\Html;
 use yii\bootstrap\Widget;
 

@@ -60,31 +60,33 @@ class AjaxLinkButton extends Widget
 
     public function run()
     {
+        $result = '';
         $label = $this->encodeLabel ? Html::encode($this->label) : $this->label;
-
         if ($this->icon !== null) {
             $icon = Html::tag('i', '', ['class' => $this->icon]);
-            $label = strcasecmp($this->iconPosition,
-              self::ICON_POSITION_LEFT) === 0 ? sprintf('%s %s', $icon,
-              $label) : sprintf('%s %s', $label, $icon);
+            $label = sprintf('%s %s', $label, $icon);
+            if (0 === strcasecmp($this->iconPosition, self::ICON_POSITION_LEFT)) {
+                $label = sprintf('%s %s', $icon, $label);
+            }
         }
 
         if ($this->ajaxUrl !== null) {
             $this->options['ajax-url'] = $this->ajaxUrl;
         }
 
-        echo Html::a($label, $this->url, $this->options);
-
+        $result .= Html::a($label, $this->url, $this->options);
         $this->registerAjaxScript();
 
+        return $result;
     }
 
-    private function registerAjaxScript()
+    private function registerAjaxScript(): void
     {
         $view = $this->getView();
 
-        $view->registerJs("$('#" . $this->options['id'] . "[ajax-url]').unbind('click').click(
-                handleAjaxLink);");
+        $view->registerJs(
+            "$('#" . $this->options['id'] . "[ajax-url]').unbind('click').click(handleAjaxLink);"
+        );
     }
 
 }

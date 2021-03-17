@@ -33,10 +33,9 @@
         "yiisoft/yii2": "^2.0",
         "bower-asset/bootstrap": "~3.3.7",
         "bower-asset/bootstrap-table": "1.11.1",
-        "demogorgorn/yii2-ajax-submit-button": "dev-master",
-        "composer/installers": "dev-master",
-        "kayalshri/tableexport.jquery.plugin": "dev-master",
-        "akottr/dragtable": "dev-master",
+        "demogorgorn/yii2-ajax-submit-button": "1.2.1",
+        "kayalshri/tableexport.jquery.plugin": "0.1.0",
+        "akottr/dragtable": "2.0.16",
         "kartik-v/yii2-date-range": "^1.6.9",
         "lavrentiev/yii2-toastr": "^2.0",
         "wbraganca/yii2-multiselect": "~1.0.1"
@@ -46,7 +45,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Itexia\\BootstrapTable\\": ""
+            "Itexia\\BootstrapTable\\": "./src/"
         }
     },
     "extra": {

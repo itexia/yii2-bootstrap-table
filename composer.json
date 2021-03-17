@@ -34,7 +34,7 @@
         "bower-asset/bootstrap": "~3.3.7",
         "bower-asset/bootstrap-table": "1.11.1",
         "demogorgorn/yii2-ajax-submit-button": "1.2.1",
-        "kayalshri/tableexport.jquery.plugin": "0.1.0",
+        "kayalshri/tableExport.jquery.plugin": "dev-hhurz-merge",
         "akottr/dragtable": "2.0.16",
         "kartik-v/yii2-date-range": "^1.6.9",
         "lavrentiev/yii2-toastr": "^2.0",

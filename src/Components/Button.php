@@ -49,7 +49,6 @@ class Button extends Widget
             return AjaxSubmitButton::widget($this->buttonConfig);
         }
 
-        // todo: does not work
         return LinkButton::widget($this->buttonConfig);
     }
 }

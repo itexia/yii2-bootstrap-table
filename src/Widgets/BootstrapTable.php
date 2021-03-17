@@ -13,6 +13,8 @@ use yii\grid\GridView;
 class BootstrapTable extends GridView
 {
     /**
+     * @var array
+     *
      * see also: http://bootstrap-table.wenzhixin.net.cn/documentation/ for
      *   additional table options
      */
@@ -43,6 +45,8 @@ class BootstrapTable extends GridView
     ];
 
     /**
+     * @var array
+     *
      * see also: http://bootstrap-table.wenzhixin.net.cn/documentation/ for
      *   additional column options.
      */
@@ -52,6 +56,9 @@ class BootstrapTable extends GridView
         'data-switchable' => 'true',
     ];
 
+    /**
+     * @var bool True to show a checkbox column
+     */
     public $rowCheckboxSelect = true;
 
     /**
@@ -88,7 +95,6 @@ class BootstrapTable extends GridView
     public function renderTableHeader(): string
     {
         $html = [];
-
         if ($this->rowCheckboxSelect) {
             $html[] = $this->addColumnCheckboxSelect();
         }
@@ -133,16 +139,14 @@ class BootstrapTable extends GridView
     private function setHeaderOptions($column)
     {
         $columnClass = (new ReflectionClass($column))->getShortName();
-        switch ($columnClass) {
-            case 'ActionColumn':
-                $column->headerOptions = [
-                    'data-field' => 'action',
-                    'data-filter-control' => 'false',
-                    'data-searchable' => 'false',
-                    'data-sortable' => 'false',
-                    'data-switchable' => 'false',
-                ];
-                break;
+        if ('ActionColumn' === $columnClass) {
+            $column->headerOptions = [
+                'data-field' => 'action',
+                'data-switchable' => 'false',
+                'data-sortable' => 'false',
+                'data-searchable' => 'false',
+                'data-filter-control' => 'false',
+            ];
         }
 
         $column->headerOptions = array_merge(

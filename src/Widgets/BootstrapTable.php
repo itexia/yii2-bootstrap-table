@@ -4,6 +4,9 @@ namespace Itexia\BootstrapTable\Widgets;
 
 use Itexia\BootstrapTable\Bundles\BootstrapTableAsset;
 use ReflectionClass;
+use ReflectionException;
+use Yii;
+use yii\base\InvalidConfigException;
 use yii\bootstrap\Html;
 use yii\grid\GridView;
 
@@ -16,30 +19,29 @@ class BootstrapTable extends GridView
      *   additional table options
      */
     private static $defaultTableOptions = [
-        'data-buttons-class' => 'btn btn-circle',
-        'data-filter-control' => 'true',
         'data-active-filters' => 'false',
-        'data-toggle' => 'table',
-        'data-show-export' => 'true',
-        'data-export-types' => ['pdf', 'csv', 'excel'],
-        'data-export-data-type' => 'all',
-        'data-show-columns' => 'true',
-        'data-reorderable-columns' => 'true',
-        'data-max-moving-rows' => '100',
         'data-ajax-url' => 'data',
-        'data-click-to-select' => 'true',
-        'data-total-field' => 'total',
-        'data-side-pagination' => 'server',
-        'data-page-size' => '10',
-        'data-page-number' => '1',
-        'data-infinite-scrolling' => 'true',
         'data-append' => 'true',
-        'data-method' => 'post',
+        'data-buttons-class' => 'btn btn-circle',
+        'data-click-to-select' => 'true',
         'data-content-type' => 'application/json',
-        'data-id-field' => 'id',
         'data-cookie' => 'true',
         'data-cookie-id-table' => 'saveTableSettings',
-        'data-locale' => 'en-GB'
+        'data-export-types' => ['csv', 'excel'],
+        'data-export-data-type' => 'all',
+        'data-filter-control' => 'true',
+        'data-id-field' => 'id',
+        'data-infinite-scrolling' => 'true',
+        'data-max-moving-rows' => '100',
+        'data-method' => 'post',
+        'data-page-number' => '1',
+        'data-page-size' => '10',
+        'data-reorderable-columns' => 'true',
+        'data-show-columns' => 'true',
+        'data-show-export' => 'true',
+        'data-side-pagination' => 'server',
+        'data-toggle' => 'table',
+        'data-total-field' => 'total',
     ];
 
     /**
@@ -49,9 +51,9 @@ class BootstrapTable extends GridView
      *   additional column options.
      */
     private static $defaultHeaderOptions = [
+        'data-filter-control' => 'select',
         'data-sortable' => 'true',
         'data-switchable' => 'true',
-        'data-filter-control' => 'select',
     ];
 
     /**
@@ -60,9 +62,9 @@ class BootstrapTable extends GridView
     public $rowCheckboxSelect = true;
 
     /**
-     * Inits widget
+     * @throws InvalidConfigException
      */
-    public function init()
+    public function init(): void
     {
         $this->id = $this->getId();
         parent::init();
@@ -72,26 +74,22 @@ class BootstrapTable extends GridView
         BootstrapTableAsset::register($this->view);
     }
 
-    /**
-     * Initialize table options.
-     *
-     * @return array
-     */
-    private function setTableOptions()
+    private function setTableOptions(): array
     {
-        return $this->tableOptions = array_merge(self::$defaultTableOptions, $this->tableOptions);
+        $settings = self::$defaultTableOptions;
+        $settings['data-locale'] = 'en-GB';
+        if (!empty(Yii::$app->language)) {
+            $settings['data-locale'] = Yii::$app->language;
+        }
+
+        return $this->tableOptions = array_merge($this->tableOptions, $settings);
     }
 
-    /**
-     * Run widget.
-     *
-     * @return string|void
-     */
-    public function run()
+    public function run(): string
     {
         $sHeader = $this->renderTableHeader();
 
-        echo $this->renderTable($sHeader);
+        return $this->renderTable($sHeader);
     }
 
     public function renderTableHeader(): string
@@ -126,27 +124,17 @@ class BootstrapTable extends GridView
     }
 
     /**
-     * Renders table header cell.
-     *
-     * @param $cell
-     *
-     * @return string
+     * @param mixed $cell
      */
     private function renderTableHeaderCell($cell): string
     {
-        return Html::tag(
-            'th',
-            $cell->label,
-            $cell->headerOptions
-        );
+        return Html::tag('th', $cell->label, $cell->headerOptions);
     }
 
     /**
-     * Initialize column header options.
-     *
-     * @param $column
-     *
+     * @param mixed $column
      * @return mixed
+     * @throws ReflectionException
      */
     private function setHeaderOptions($column)
     {
@@ -169,14 +157,7 @@ class BootstrapTable extends GridView
         return $column;
     }
 
-    /**
-     * Renders table.
-     *
-     * @param string $html
-     *
-     * @return string
-     */
-    private function renderTable($html = '<thead></thead>'): string
+    private function renderTable(string $html = '<thead></thead>'): string
     {
         return Html::tag('table', $html, $this->tableOptions);
     }

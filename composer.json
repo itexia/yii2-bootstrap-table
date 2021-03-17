@@ -1,44 +1,57 @@
 {
-  "name": "itexia/yii2-bootstrap-table",
-  "description": "Using extending bootstrap table ",
-  "keywords": [
-    "bootstrap table",
-    "yii2"
-  ],
-  "homepage": "http://bootstrap-table.wenzhixin.net.cn",
-  "license": "MIT",
-  "support": {
-    "issues": "https://github.com/itexia/yii2-bootstrap-table?state=open"
-  },
-  "authors": [
-    {
-      "name": "Susann Sgorzaly",
-      "email": "developer@itexia.com",
-      "homepage": "http://www.itexia.com",
-      "role": "Developer"
+    "name": "itexia/yii2-bootstrap-table",
+    "description": "Using bootstrap-table in Yii2",
+    "keywords": [
+        "bootstrap table",
+        "yii2"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Susann Sgorzaly",
+            "email": "developer@itexia.com",
+            "homepage": "http://www.itexia.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/itexia/dragtable"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/itexia/tableExport.jquery.plugin"
+        }
+    ],
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/bootstrap": "~3.3.7",
+        "bower-asset/bootstrap-table": "1.11.1",
+        "demogorgorn/yii2-ajax-submit-button": "1.2.1",
+        "kayalshri/tableExport.jquery.plugin": "dev-hhurz-merge",
+        "akottr/dragtable": "2.0.16",
+        "kartik-v/yii2-date-range": "^1.6.9",
+        "lavrentiev/yii2-toastr": "^2.0",
+        "wbraganca/yii2-multiselect": "~1.0.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Itexia\\BootstrapTable\\": "./src/"
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
     }
-  ],
-  "type": "yii2-extension",
-  "require": {
-    "yiisoft/yii2": "~2.0.6",
-    "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-    "bower-asset/bootstrap-table": "1.11.1",
-    "demogorgorn/yii2-ajax-submit-button": "dev-master",
-    "kayalshri/tableExport.jquery.plugin": "dev-hhurz-merge",  
-    "akottr/dragtable": "dev-master",
-    "kartik-v/yii2-date-range": "^1.6.9",
-    "lavrentiev/yii2-toastr": "^2.0",
-    "wbraganca/yii2-multiselect": "~1.0.1"
-  },
-  "autoload": {
-    "psr-4": {
-      "itexia\\bootstraptable\\": ""
-    }
-  },
-  "extra": {
-    "asset-installer-paths": {
-      "npm-asset-library": "vendor/npm",
-      "bower-asset-library": "vendor/bower"
-    }
-  }
 }

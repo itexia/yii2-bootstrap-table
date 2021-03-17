@@ -1,6 +1,6 @@
 <?php
 
-namespace itexia\bootstraptable\bundles;
+namespace Itexia\BootstrapTable\Bundles;
 
 use yii\web\AssetBundle;
 
@@ -9,7 +9,7 @@ class AjaxRequestAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@vendor/itexia/yii2-bootstrap-table/assets';
+    public $sourcePath = '@vendor/itexia/yii2-bootstrap-table/src/Assets';
 
     /**
      * @var array

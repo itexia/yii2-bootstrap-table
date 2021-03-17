@@ -1,10 +1,10 @@
 <?php
 
-namespace itexia\bootstraptable\components;
+namespace Itexia\BootstrapTable\Components;
 
 use demogorgorn\ajax\AjaxSubmitButton;
 use Exception;
-use itexia\bootstraptable\widgets\LinkButton;
+use Itexia\BootstrapTable\Widgets\LinkButton;
 use yii\base\Widget;
 
 class Button extends Widget
@@ -29,7 +29,7 @@ class Button extends Widget
         $this->buttonConfig = $config;
     }
 
-    public function init()
+    public function init(): void
     {
         parent::init();
 
@@ -39,20 +39,16 @@ class Button extends Widget
     }
 
     /**
-     * @return string|void
-     * @throws \Exception
+     * @throws Exception
      */
-    public function run()
+    public function run(): string
     {
         parent::run();
 
         if ($this->isAjaxButton) {
-            echo AjaxSubmitButton::widget($this->buttonConfig);
-            return;
+            return AjaxSubmitButton::widget($this->buttonConfig);
         }
 
-        // todo: does not work
-        echo LinkButton::widget($this->buttonConfig);
-
+        return LinkButton::widget($this->buttonConfig);
     }
 }

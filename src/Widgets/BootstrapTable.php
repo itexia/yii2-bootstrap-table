@@ -75,7 +75,7 @@ class BootstrapTable extends GridView
             $settings['data-locale'] = Yii::$app->language;
         }
 
-        return $this->tableOptions = array_merge($this->tableOptions, $settings);
+        return $this->tableOptions = array_merge($settings, $this->tableOptions);
     }
 
     public function run(): string
@@ -88,7 +88,6 @@ class BootstrapTable extends GridView
     public function renderTableHeader(): string
     {
         $html = [];
-
         if ($this->rowCheckboxSelect) {
             $html[] = $this->addColumnCheckboxSelect();
         }
@@ -133,22 +132,17 @@ class BootstrapTable extends GridView
     private function setHeaderOptions($column)
     {
         $columnClass = (new ReflectionClass($column))->getShortName();
-        switch ($columnClass) {
-            case 'ActionColumn':
-                $column->headerOptions = [
-                    'data-field' => 'action',
-                    'data-filter-control' => 'false',
-                    'data-searchable' => 'false',
-                    'data-sortable' => 'false',
-                    'data-switchable' => 'false',
-                ];
-                break;
+        if ('ActionColumn' === $columnClass) {
+            $column->headerOptions = [
+                'data-field' => 'action',
+                'data-filter-control' => 'false',
+                'data-searchable' => 'false',
+                'data-sortable' => 'false',
+                'data-switchable' => 'false',
+            ];
         }
 
-        $column->headerOptions = array_merge(
-            self::$defaultHeaderOptions,
-            $column->headerOptions
-        );
+        $column->headerOptions = array_merge(self::$defaultHeaderOptions, $column->headerOptions);
 
         return $column;
     }

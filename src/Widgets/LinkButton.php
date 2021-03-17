@@ -1,6 +1,6 @@
 <?php
 
-namespace itexia\bootstraptable\widgets;
+namespace Itexia\BootstrapTable\Widgets;
 
 use yii\bootstrap\Button;
 use yii\bootstrap\Html;
@@ -26,18 +26,19 @@ class LinkButton extends Button
      */
     public $url;
 
-    /**
-     * @return string
-     */
-    public function run()
+    public function run(): string
     {
-        $label = $this->encodeLabel ? Html::encode($this->label) : $this->label;
+        $label = $this->label;
+        if ($this->encodeLabel) {
+            $label = Html::encode($this->label);
+        }
 
         if ($this->icon !== null) {
             $icon = Html::tag('i', '', ['class' => $this->icon]);
-            $label = strcasecmp($this->iconPosition,
-              self::ICON_POSITION_LEFT) === 0 ? sprintf('%s %s', $icon,
-              $label) : sprintf('%s %s', $label, $icon);
+            $label = sprintf('%s %s', $label, $icon);
+            if (0 === strcasecmp($this->iconPosition, self::ICON_POSITION_LEFT)) {
+                $label = sprintf('%s %s', $icon, $label);
+            }
         }
 
         return Html::a($label, $this->url, $this->options);

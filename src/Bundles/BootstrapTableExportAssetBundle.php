@@ -1,6 +1,6 @@
 <?php
 
-namespace itexia\bootstraptable\bundles;
+namespace Itexia\BootstrapTable\Bundles;
 
 use yii\web\AssetBundle;
 

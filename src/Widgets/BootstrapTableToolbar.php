@@ -1,6 +1,6 @@
 <?php
 
-namespace itexia\bootstraptable\widgets;
+namespace Itexia\BootstrapTable\Widgets;
 
 use yii\base\Widget;
 use yii\helpers\Html;
@@ -17,12 +17,12 @@ class BootstrapTableToolbar extends Widget
      */
     public $toolbarButtons;
 
-    public function init()
+    public function init(): void
     {
         parent::init();
     }
 
-    public function run()
+    public function run(): string
     {
         return Html::tag(
             'div',

@@ -3,7 +3,6 @@ function handleAjaxLink(e) {
     var $link = $(e.target),
         targetUrl = $link.attr('ajax-url'),
         $tableOptions = $.fn.bootstrapTable.defaults,
-        ajaxRequest,
         callbackFunction = $link.attr('callback-function');
 
     if (!targetUrl) {
